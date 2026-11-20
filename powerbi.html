@@ -95,116 +95,289 @@
             </a>
           </div>
         </div>
-        <div class="grid">
-          <div class="card shot-card">
-            <h3>01 · Executive Business Overview</h3>
-            <p class="muted">
-              Platform KPIs, monthly revenue and bookings, city-wise revenue,
-              genre distribution and payment status.
-            </p>
-            <a href="assets/overview.png" target="_blank"
-              ><img
-                class="shot"
-                src="assets/overview.png"
-                alt="Executive Business Overview dashboard"
-            /></a>
-          </div>
-          <div class="card shot-card">
-            <h3>02 · Movie Performance Analysis</h3>
-            <p class="muted">
-              Top movies by tickets sold and ratings, genre revenue, language
-              distribution, popularity vs ratings and release trends.
-            </p>
-            <a href="assets/movies.png" target="_blank"
-              ><img
-                class="shot"
-                src="assets/movies.png"
-                alt="Movie Performance Analysis dashboard"
-            /></a>
-          </div>
-          <div class="card shot-card">
-            <h3>03 · Theater & Show Performance</h3>
-            <p class="muted">
-              City-wise theater distribution, top theaters by revenue, show
-              timing, seat occupancy and ticket demand.
-            </p>
-            <a href="assets/theaters.png" target="_blank"
-              ><img
-                class="shot"
-                src="assets/theaters.png"
-                alt="Theater and Show Performance dashboard"
-            /></a>
-          </div>
-          <div class="card shot-card">
-            <h3>04 · Revenue & Payment Analysis</h3>
-            <p class="muted">
-              Monthly revenue, revenue by city and genre, transaction status,
-              ticket sales and payment method distribution.
-            </p>
-            <a href="assets/revenue.png" target="_blank"
-              ><img
-                class="shot"
-                src="assets/revenue.png"
-                alt="Revenue and Payment Analysis dashboard"
-            /></a>
-          </div>
-          <div class="card shot-card">
-            <h3>05 · Customer & Review Analysis</h3>
-            <p class="muted">
-              Customer age distribution, repeat customers, booking frequency,
-              top customers and review ratings.
-            </p>
-            <a href="assets/customers.png" target="_blank"
-              ><img
-                class="shot"
-                src="assets/customers.png"
-                alt="Customer and Review Analysis dashboard"
-            /></a>
-          </div>
-          <div class="card span-12">
-            <h3>Dashboard requirements & slicers</h3>
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Page</th>
-                    <th>Purpose</th>
-                    <th>Primary slicers</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Executive overview</td>
-                    <td>Overall platform performance</td>
-                    <td>Booking Date, City, Movie Genre, Language</td>
-                  </tr>
-                  <tr>
-                    <td>Movie performance</td>
-                    <td>Popularity, preferences and ratings</td>
-                    <td>Genre, Language, Release Date, Movie Title</td>
-                  </tr>
-                  <tr>
-                    <td>Theater & show performance</td>
-                    <td>Theater performance and high-demand shows</td>
-                    <td>City, Theater, Show Date, Movie Title, Show Timing</td>
-                  </tr>
-                  <tr>
-                    <td>Revenue & payment</td>
-                    <td>Revenue generation and transaction performance</td>
-                    <td>
-                      Payment Date, Payment Method, Transaction Status, City
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Customer & review</td>
-                    <td>Engagement, repeat bookings and satisfaction</td>
-                    <td>Age Group, Booking Date, Movie Title, Rating</td>
-                  </tr>
-                </tbody>
-              </table>
+        <section
+          class="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-8 text-zinc-100"
+        >
+          <!-- Video Showcase Wrapper -->
+          <div
+            class="bg-zinc-950 border border-red-600/40 rounded-2xl overflow-hidden shadow-[0_0_35px_rgba(220,38,38,0.2)]"
+          >
+            <div
+              class="flex items-center justify-between px-5 py-3 bg-gradient-to-r from-black via-zinc-950 to-red-950/30 border-b border-red-600/30"
+            >
+              <div class="flex items-center gap-2.5">
+                <span
+                  class="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse"
+                ></span>
+                <span
+                  class="text-xs font-semibold uppercase tracking-wider text-zinc-300"
+                >
+                  Interactive Dashboard Walkthrough
+                </span>
+              </div>
+              <span
+                class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-red-600/20 text-red-400 border border-red-600/40"
+              >
+                Demo Video
+              </span>
+            </div>
+
+            <div class="relative aspect-video bg-black group">
+              <video
+                class="w-full h-full object-contain accent-red-600 focus:outline-none"
+                controls
+                playsinline
+                preload="metadata"
+                poster="assets/overview.png"
+              >
+                <source src="assets/dashboard.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
-        </div>
+
+          <!-- Dashboard Screenshots Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 01 -->
+            <div
+              class="bg-zinc-950 border border-zinc-800 hover:border-red-600/60 rounded-xl p-5 flex flex-col justify-between transition duration-300 shadow-lg hover:shadow-red-950/30 group"
+            >
+              <div>
+                <h3
+                  class="text-base font-bold text-white group-hover:text-red-400 transition"
+                >
+                  01 · Executive Business Overview
+                </h3>
+                <p class="text-sm text-zinc-400 mt-1.5 mb-4 leading-relaxed">
+                  Platform KPIs, monthly revenue and bookings, city-wise
+                  revenue, genre distribution and payment status.
+                </p>
+              </div>
+              <a
+                href="assets/overview.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block overflow-hidden rounded-lg border border-zinc-800 group-hover:border-red-600/40"
+              >
+                <img
+                  class="w-full aspect-video object-cover group-hover:scale-105 transition duration-300"
+                  src="assets/overview.png"
+                  alt="Executive Business Overview dashboard"
+                />
+              </a>
+            </div>
+
+            <!-- Card 02 -->
+            <div
+              class="bg-zinc-950 border border-zinc-800 hover:border-red-600/60 rounded-xl p-5 flex flex-col justify-between transition duration-300 shadow-lg hover:shadow-red-950/30 group"
+            >
+              <div>
+                <h3
+                  class="text-base font-bold text-white group-hover:text-red-400 transition"
+                >
+                  02 · Movie Performance Analysis
+                </h3>
+                <p class="text-sm text-zinc-400 mt-1.5 mb-4 leading-relaxed">
+                  Top movies by tickets sold and ratings, genre revenue,
+                  language distribution, popularity vs ratings and release
+                  trends.
+                </p>
+              </div>
+              <a
+                href="assets/movies.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block overflow-hidden rounded-lg border border-zinc-800 group-hover:border-red-600/40"
+              >
+                <img
+                  class="w-full aspect-video object-cover group-hover:scale-105 transition duration-300"
+                  src="assets/movies.png"
+                  alt="Movie Performance Analysis dashboard"
+                />
+              </a>
+            </div>
+
+            <!-- Card 03 -->
+            <div
+              class="bg-zinc-950 border border-zinc-800 hover:border-red-600/60 rounded-xl p-5 flex flex-col justify-between transition duration-300 shadow-lg hover:shadow-red-950/30 group"
+            >
+              <div>
+                <h3
+                  class="text-base font-bold text-white group-hover:text-red-400 transition"
+                >
+                  03 · Theater & Show Performance
+                </h3>
+                <p class="text-sm text-zinc-400 mt-1.5 mb-4 leading-relaxed">
+                  City-wise theater distribution, top theaters by revenue, show
+                  timing, seat occupancy and ticket demand.
+                </p>
+              </div>
+              <a
+                href="assets/theaters.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block overflow-hidden rounded-lg border border-zinc-800 group-hover:border-red-600/40"
+              >
+                <img
+                  class="w-full aspect-video object-cover group-hover:scale-105 transition duration-300"
+                  src="assets/theaters.png"
+                  alt="Theater and Show Performance dashboard"
+                />
+              </a>
+            </div>
+
+            <!-- Card 04 -->
+            <div
+              class="bg-zinc-950 border border-zinc-800 hover:border-red-600/60 rounded-xl p-5 flex flex-col justify-between transition duration-300 shadow-lg hover:shadow-red-950/30 group"
+            >
+              <div>
+                <h3
+                  class="text-base font-bold text-white group-hover:text-red-400 transition"
+                >
+                  04 · Revenue & Payment Analysis
+                </h3>
+                <p class="text-sm text-zinc-400 mt-1.5 mb-4 leading-relaxed">
+                  Monthly revenue, revenue by city and genre, transaction
+                  status, ticket sales and payment method distribution.
+                </p>
+              </div>
+              <a
+                href="assets/revenue.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block overflow-hidden rounded-lg border border-zinc-800 group-hover:border-red-600/40"
+              >
+                <img
+                  class="w-full aspect-video object-cover group-hover:scale-105 transition duration-300"
+                  src="assets/revenue.png"
+                  alt="Revenue and Payment Analysis dashboard"
+                />
+              </a>
+            </div>
+
+            <!-- Card 05 -->
+            <div
+              class="bg-zinc-950 border border-zinc-800 hover:border-red-600/60 rounded-xl p-5 flex flex-col justify-between transition duration-300 shadow-lg hover:shadow-red-950/30 group"
+            >
+              <div>
+                <h3
+                  class="text-base font-bold text-white group-hover:text-red-400 transition"
+                >
+                  05 · Customer & Review Analysis
+                </h3>
+                <p class="text-sm text-zinc-400 mt-1.5 mb-4 leading-relaxed">
+                  Customer age distribution, repeat customers, booking
+                  frequency, top customers and review ratings.
+                </p>
+              </div>
+              <a
+                href="assets/customers.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block overflow-hidden rounded-lg border border-zinc-800 group-hover:border-red-600/40"
+              >
+                <img
+                  class="w-full aspect-video object-cover group-hover:scale-105 transition duration-300"
+                  src="assets/customers.png"
+                  alt="Customer and Review Analysis dashboard"
+                />
+              </a>
+            </div>
+
+            <!-- Full-Width Requirements & Slicers Table -->
+            <div
+              class="col-span-full bg-zinc-950 border border-red-600/30 rounded-xl p-6 shadow-lg"
+            >
+              <div class="flex items-center gap-2 mb-4">
+                <span class="w-1.5 h-5 bg-red-600 rounded-full"></span>
+                <h3 class="text-lg font-bold text-white">
+                  Dashboard Requirements & Slicers
+                </h3>
+              </div>
+
+              <div class="overflow-x-auto rounded-lg border border-zinc-800">
+                <table class="w-full text-left border-collapse text-sm">
+                  <thead>
+                    <tr
+                      class="bg-red-950/40 border-b border-red-600/40 text-red-300 uppercase text-xs tracking-wider"
+                    >
+                      <th class="py-3.5 px-4 font-semibold">Page</th>
+                      <th class="py-3.5 px-4 font-semibold">Purpose</th>
+                      <th class="py-3.5 px-4 font-semibold">Primary Slicers</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-zinc-800/80 bg-black/60">
+                    <tr class="hover:bg-red-950/20 transition">
+                      <td
+                        class="py-3.5 px-4 font-medium text-white whitespace-nowrap"
+                      >
+                        Executive overview
+                      </td>
+                      <td class="py-3.5 px-4 text-zinc-300">
+                        Overall platform performance
+                      </td>
+                      <td class="py-3.5 px-4 text-zinc-400">
+                        Booking Date, City, Movie Genre, Language
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-red-950/20 transition">
+                      <td
+                        class="py-3.5 px-4 font-medium text-white whitespace-nowrap"
+                      >
+                        Movie performance
+                      </td>
+                      <td class="py-3.5 px-4 text-zinc-300">
+                        Popularity, preferences and ratings
+                      </td>
+                      <td class="py-3.5 px-4 text-zinc-400">
+                        Genre, Language, Release Date, Movie Title
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-red-950/20 transition">
+                      <td
+                        class="py-3.5 px-4 font-medium text-white whitespace-nowrap"
+                      >
+                        Theater &amp; show performance
+                      </td>
+                      <td class="py-3.5 px-4 text-zinc-300">
+                        Theater performance and high-demand shows
+                      </td>
+                      <td class="py-3.5 px-4 text-zinc-400">
+                        City, Theater, Show Date, Movie Title, Show Timing
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-red-950/20 transition">
+                      <td
+                        class="py-3.5 px-4 font-medium text-white whitespace-nowrap"
+                      >
+                        Revenue &amp; payment
+                      </td>
+                      <td class="py-3.5 px-4 text-zinc-300">
+                        Revenue generation and transaction performance
+                      </td>
+                      <td class="py-3.5 px-4 text-zinc-400">
+                        Payment Date, Payment Method, Transaction Status, City
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-red-950/20 transition">
+                      <td
+                        class="py-3.5 px-4 font-medium text-white whitespace-nowrap"
+                      >
+                        Customer &amp; review
+                      </td>
+                      <td class="py-3.5 px-4 text-zinc-300">
+                        Engagement, repeat bookings and satisfaction
+                      </td>
+                      <td class="py-3.5 px-4 text-zinc-400">
+                        Age Group, Booking Date, Movie Title, Rating
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
         <footer class="footer">
           BookMyShow | SQL Data Analysis & Power BI Dashboard Project ·
           Portfolio showcase
